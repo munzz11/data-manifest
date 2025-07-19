@@ -1,0 +1,8 @@
+target/
+!target/release/data-manifest
+.git/
+.gitignore
+README.md
+*.md
+Dockerfile
+.dockerignore 

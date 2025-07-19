@@ -1,0 +1,17 @@
+[package]
+name = "data-manifest"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rayon = "1.7"
+walkdir = "2.3"
+sha2 = "0.10"
+clap = { version = "3.2", features = ["derive"] }
+anyhow = "1.0"
+indicatif = "0.16"
+
+[target.x86_64-unknown-linux-gnu]
+rustflags = ["-C", "target-feature=+crt-static"]
